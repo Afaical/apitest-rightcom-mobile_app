@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="3dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:text="SALAMI Abdel-Faïçal"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/tvFunction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="10dp"
+                android:text="Développeur mobile android"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/mrlDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="3dp"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="5dp">
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/background_button_delete"
+                    android:text="Supprimer"
+                    android:textColor="@android:color/white"/>
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
